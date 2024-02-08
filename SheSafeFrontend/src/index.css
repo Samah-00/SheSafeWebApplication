@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+
+}
+.navbar {
+  position: fixed;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  border-bottom: 1.5px solid #f2f2f2;
+  z-index: 1000;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 1);
+  
+}
+.navbar h1 {
+  color: #f1356d;
+  text-align: center;
+  margin-left:100px;
+}
+.navbar .links {
+  margin-left: auto;
+  margin-right:200px;
+}
+.navbar button {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  border: none;
+  background-color: transparent;
+}
+.navbar button:hover {
+  color: #f1356d;
+}
+.scroll-indicator {
+  position: fixed;
+  top:0;
+  margin-top: 70px;
+  width: 100%;
+  height: 4px; /* Set the height of the progress line */
+  background-color: #f1356d; /* Choose your desired color */
+  display: none; /* Initially hide the scroll indicator */
+  z-index: 1; /* Set a higher z-index value */
+  
+}
+
+.indicator {
+  height: 8px;
+  width: 0;
+  transition: width 0.3s ease; /* Add a smooth transition effect */
+}
+.section {
+  padding: 400px 0;
+  background-color: transparent;
+}
+#home {
+  background-image: url('./girl3.png');
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+  padding-left: 70px; 
+
+}
+
+#home h2 {
+  font-size: 2em; /* Adjust the font size as needed */
+}
+
+#home p {
+  font-size: 1.2em; /* Adjust the font size as needed */
+  border-bottom-left-radius: 10px; /* Adjust the radius as needed */
+  border-bottom-right-radius: 10px; /* Adjust the radius as needed */
+  /* border-bottom: 2px solid #fff; Add a border for the rounded bottom */
+  padding-bottom: 10px;
+  text-align: left;
+}
+.she-safe {
+  font-size: 3em;
+  color:#f1356d;
+  text-align: left;
+  
+  /* Add other styling properties as needed */
+}
+.action-button {
+  background-color: #f1356d; /* Button background color */
+  color: #fff; 
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 1.2em; /* Adjust font size as needed */
+  border: none;
+  border-radius: 50px;
+  margin-right: 20px; /* Adjust border-radius as needed for rounded corners */
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #553285; /* Change background color on hover */
+}
+
+#Questions{
+  background-color: #f0f0f0;
+}
+#About{
+  background-color: pink;
+  background-size: contain;
+  background-position: center;
+}
+.About h1{
+  text-align: center;
+  margin-top: 100px;
+}
+.head{
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+ 
+}
+.head img {
+  width: 600px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  display: block; /* Ensures margin auto works for centering */
+  margin: auto; /* Center the image horizontally */
+}
+
+.who-we-are-container{
+
+  text-align: center;
+  margin-left : 50px;
+  margin-right: 50px;
+  float: center;
+  bottom: -100px;
+
+}
+.who-we-are-container p{
+    text-align: center;
+    margin-left : 20px;
+    margin-right: 20px;
+    float: center;
+    /* background-color: #f0f0f0; */
+    
+    
+}
+.who-we-are-container h1{
+  color:#f1356d;
+  margin-top: 0;
+}
+.meet-the-team-container img{
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  display: block; /* Ensures margin auto works for centering */
+  margin: auto;
+  position: center;
+  margin-top:100px;
+
+}
+.meet-the-team-container{
+  text-align: center;
+    margin-left : 50px;
+    margin-right: 50px;
+    float: center;
+    bottom: -100px;
+  
+}
+
+.meet-the-team-container h1{
+ 
+  color:#f1356d;
+}
+.team-member {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  margin-right: 112px;
+}
+
+  .team-member h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .team-member p {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+  }
+.contact-us-container{
+  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  text-align: center;
+  }
+
+.contact-us-container img{
+  max-width: 600px; /* Adjust the width as needed */
+  height: 500px; 
+  margin-right: 100px; 
+}
+.contact-content {
+  max-width: 600px;
+  flex:1; /* Adjust the maximum width as needed */
+  display: flex;
+}
+.contact-content  p,.contact-content  h1{
+  text-align: center;
+  margin-top: 50px;
+}
+.contact-form {
+  flex: 1; /* Take up remaining space */
+  text-align: left;
+  max-width: 400px; 
+  margin-left: 100px;
+  
+}
+.contact h1{
+  text-align: center;
+}
+.contact-form p{
+
+  text-align: left;
+  margin-top: 50px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: pink;
+  
+}
+
+.contact-form button {
+  max-width: 400px; 
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1356d;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Higher z-index to appear above other elements */
+}
+
+.modal {
+  background: pink;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+
+}
+
+.modal button {
+  background: #007bff; /* Button color, customize as needed */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#LogIn{
+  background-color: #f1356d; /* Button background color */
+  color: #fff; 
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 1em; /* Adjust font size as needed */
+  border: none;
+  border-radius: 50px;
+  margin-right: 20px; /* Adjust border-radius as needed for rounded corners */
+  cursor: pointer;
+}
+#LogIn:hover{
+  background-color:#553285;
+}
